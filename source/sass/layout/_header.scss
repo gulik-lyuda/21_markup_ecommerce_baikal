@@ -1,0 +1,114 @@
+.header__top {
+    width: 100%;
+    height: $wsize-111px;
+
+    background-color: $bg-dark-grey;
+
+    color: $white;
+
+    .container {
+        height: inherit;
+        margin-top: -2px;
+    }
+
+    .sign_in {
+        border: 1px solid $border-grey; 
+        margin-right: $wsize-62px;
+
+        color: $white;
+
+        &:hover {
+            background-color: $white;
+
+            color: $font-dark-grey;
+        }
+        
+        svg {
+            width: $wsize-16px;
+            height: $wsize-16px;
+            margin-right: $wsize-22px;
+
+            fill: #7e7e7e;
+        }
+    }
+    // end of .sign_in
+
+    .location,
+    .currency {
+
+        font-family: 'PT Serif', Georgia, 'Times New Roman', Times, serif;
+        font-size: $font-size-14px;
+        line-height: 1.4vw; //16.8px :-(
+        color: $font-light-grey;
+
+        span {
+            margin-left: $wsize-13px;
+
+            font-size: $font-size-10px;
+            line-height: $line-height-12px;
+            font-weight: 700;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: $white;
+        }
+    }
+    // end of .location & .currency
+
+    .currency {
+        margin-right: $wsize-74px;
+
+        span {
+            letter-spacing: 0.27em;
+        }
+    }
+    // end of .currency
+
+    .logo {
+        display: block;
+
+        width: $wsize-156px;
+        height: $wsize-40px;
+        margin-left: 30px;
+        margin-top: -7px;
+
+        a {
+            display: block;
+
+            width: $wsize-156px;
+            height: $wsize-40px;
+
+            text-decoration: none;
+        }
+
+        svg {
+            fill: $white;
+        }
+    }
+    // end of .logo
+
+    .cart {
+        margin-top: 3px;
+        padding: $wsize-9px $wsize-22px $wsize-9px $wsize-19px;
+
+        &:hover {
+            background-color: $font-green;
+
+            color: $white;
+
+            svg {
+                fill: $white;
+            }
+        }
+        // end of .cart:hover
+
+        svg {
+            width: $wsize-15px;
+            height: $wsize-14px;
+            margin-right: $wsize-16px;
+
+            fill: $font-green;
+        }  
+    }
+    // end of .cart
+}
+// end of .header__top

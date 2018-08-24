@@ -12,3 +12,9 @@ button:hover,
     transition: all 200ms linear;
     cursor: pointer; //just for buttons, because links have it by default
 }
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}

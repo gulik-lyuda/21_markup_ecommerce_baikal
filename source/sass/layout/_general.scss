@@ -1,0 +1,41 @@
+body {
+    background-color: $bg-grey;
+
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: $font-size-10px;
+    line-height: $line-height-12px;
+}
+// end of body
+
+.container {
+    width: $wsize-980px;
+    margin: 0 auto;
+
+    position: relative;
+}
+// end of .container
+
+.btn {
+    overflow: hidden;
+    padding: $wsize-8px $wsize-16px;
+
+    cursor: pointer;
+
+    background-color: transparent;
+
+    border-radius: $wsize-4px;
+
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.green-btn {
+    border: 1px solid $font-green; 
+
+    color: $font-green;
+
+    svg {
+        fill: $font-green;
+    }
+}
