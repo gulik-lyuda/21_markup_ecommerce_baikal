@@ -12,7 +12,11 @@ button:hover,
   cursor: pointer; }
 
 ul,
-li {
+li,
+h1,
+h2,
+h3,
+p {
   margin: 0;
   padding: 0; }
 
@@ -27,12 +31,14 @@ body {
   margin: 0 auto;
   position: relative; }
 
+.rounded_box {
+  border-radius: 0.33vw; }
+
 .btn {
   overflow: hidden;
   padding: 0.67vw 1.33vw;
   cursor: pointer;
   background-color: transparent;
-  border-radius: 0.33vw;
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase; }
@@ -158,9 +164,10 @@ body {
 .banner {
   width: 100%;
   height: 16.67vw;
+  margin-bottom: 4.17vmax;
   background: radial-gradient(ellipse closest-side at 50% 50%, #d7e8ec 0%, #c2d1d1 100%); }
   .banner__description h1 {
-    margin: 0 0 0.75vw;
+    margin-bottom: 0.75vw;
     font-size: 4.33vmax;
     line-height: 5.2vmax;
     text-transform: capitalize;
@@ -181,3 +188,86 @@ body {
     width: auto;
     position: absolute;
     right: 6.17vw; }
+
+.left_panel {
+  width: 19.16vw; }
+
+.products__gallery {
+  width: 60.83vw; }
+
+.products__list {
+  margin-bottom: 1.67vmax; }
+
+.products__item {
+  width: 19.16vw;
+  height: 25vmax;
+  padding: 1.92vmax;
+  margin-right: 1.67vw;
+  margin-bottom: 1.75vmax;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  text-decoration: none;
+  text-align: center; }
+  .products__item:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); }
+  .products__item:nth-child(3n) {
+    margin-right: 0; }
+  .products__item_image {
+    width: 13.33vw;
+    height: 13.33vw;
+    margin-bottom: 1.83vmax;
+    overflow: hidden; }
+    .products__item_image img {
+      width: auto;
+      height: 100%; }
+  .products__item h2 {
+    margin-bottom: 0.26vmax;
+    font-size: 1.25vmax;
+    letter-spacing: -0.015em;
+    line-height: 1.5vmax;
+    font-weight: 700;
+    color: #3a3d3f; }
+  .products__item_tags {
+    margin-bottom: 0.42vmax;
+    font-family: 'PT Serif', Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 1vmax;
+    line-height: 1.2vmax;
+    color: #838c8d; }
+  .products__item_price {
+    font-size: 1.08vmax;
+    font-weight: 600;
+    line-height: 1.08vmax;
+    color: #393d3f; }
+  .products__item_sticker {
+    padding: 0.42vmax;
+    position: absolute;
+    top: 1.67vmax;
+    right: 1.67vmax;
+    z-index: 1;
+    background-color: #84ce8b;
+    font-size: 0.83vmax;
+    font-weight: 700;
+    line-height: 1vmax;
+    letter-spacing: 0.2vmax;
+    text-transform: uppercase;
+    color: #fff; }
+
+#load_more_btn {
+  width: 100%;
+  padding: 1.17vmax;
+  margin-bottom: 6.67vmax;
+  background-color: #b8c6c7;
+  border: none;
+  font-size: 1.25vmax;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #fff; }
+  #load_more_btn:hover {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98); }

@@ -1,0 +1,119 @@
+.products__gallery {
+    width: $wsize-730px;
+
+}
+// end of .products__gallery
+
+.products__list {
+    margin-bottom: $msize-20px;
+
+}
+// end of .products__list
+
+.products__item {
+    width: $wsize-230px;
+    height: $msize-300px;
+    padding: $msize-23px;
+    margin-right: $wsize-20px;
+    margin-bottom: $msize-21px;
+
+    position: relative;
+
+    flex-direction: column;
+
+    background-color: $white;
+
+    text-decoration: none;
+    text-align: center;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    &_image {
+        width: $wsize-160px;
+        height: $wsize-160px;
+        margin-bottom: $msize-22px;
+
+        overflow: hidden;
+
+        img {
+            width: auto;
+            height: 100%;
+        }
+    }
+    // end of .products__item_image
+
+    h2 {
+        margin-bottom: 0.26vmax;
+
+        font-size: $font-size-15px;
+        letter-spacing: -0.015em;
+        line-height: $line-height-18px;
+        font-weight: 700;
+        color: $font-middle-grey;
+    }
+
+    &_tags {
+        margin-bottom: $msize-5px;
+
+        font-family: 'PT Serif', Georgia, 'Times New Roman', Times, serif;
+        font-style: italic; 
+        font-size: $font-size-12px;
+        line-height: $line-height-14_4px;
+        color: #838c8d;
+    }
+    // end of .products__item_tags
+
+    &_price {
+
+        font-size: $font-size-13px;
+        font-weight: 600;
+        line-height: $font-size-13px;
+        color: $font-black;
+    }
+    // end of .products__item_price
+
+    &_sticker {
+        padding: $msize-5px;
+
+        position: absolute;
+        top: $msize-20px;
+        right: $msize-20px;
+        z-index: 1;
+
+        background-color: $bg-green;
+
+        font-size: $font-size-10px;
+        font-weight: 700;
+        line-height: $line-height-12px;
+        letter-spacing: 0.2vmax;
+        text-transform: uppercase;
+        color: $white;
+    }
+    // end of .products__item_sticker 
+}
+// end of .products__item
+
+#load_more_btn {
+    width: 100%;
+    padding: $msize-14px;
+    margin-bottom: $msize-80px;
+
+    background-color: $bg-blue-grey;
+    border: none;
+
+    font-size: $font-size-15px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: $white;
+
+    &:hover {
+        transform: scale(0.98);
+    }
+}
+// end of #load_more_btn

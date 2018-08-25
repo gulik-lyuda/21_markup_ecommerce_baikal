@@ -15,6 +15,10 @@ body {
 }
 // end of .container
 
+.rounded_box {
+    border-radius: $wsize-4px;
+}
+
 .btn {
     overflow: hidden;
     padding: $wsize-8px $wsize-16px;
@@ -22,8 +26,6 @@ body {
     cursor: pointer;
 
     background-color: transparent;
-
-    border-radius: $wsize-4px;
 
     font-weight: 700;
     letter-spacing: 0.2em;
