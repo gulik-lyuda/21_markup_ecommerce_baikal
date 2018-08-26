@@ -1,5 +1,236 @@
 .left_panel {
     width: $wsize-230px;
-
 }
 // end of .left_panel
+
+.product__types {
+    margin-bottom: $msize-20px;
+    background-color: $white;
+
+    &_item {
+        width: 100%;
+
+        cursor: pointer;
+    }
+    // end of .product__types_item
+
+    .item__title {
+        padding: $msize-21px;
+
+        border-bottom: 1px solid $border-grey;
+
+        font-size: $font-size-11px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: $font-dark-grey;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &.open {  // rotate icon and change it's color when user click on .item__title
+            svg {
+                fill: $bg-dark-blue-grey;
+
+                transform: rotate(90deg);
+            }
+        }
+
+        svg {
+            width: 5px;
+            height: 8px;
+
+            fill: $bg-blue-grey;
+        }
+    }
+    // end of .item__title
+
+    .item__links {
+        // don't show this block by default
+        height: 0;
+        overflow: hidden;
+
+        background-color: $bg-dark-blue-grey;
+
+        &.open {  // but show it when user click on .item__title
+            height: auto;
+        }
+
+        ul {
+            padding: $msize-21px;
+        }
+
+        li {
+            margin-bottom: $msize-5px;
+
+            list-style: none;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        
+        a {          
+            font-size: $font-size-13px;
+            font-weight: 400;
+            line-height: $line-height-25_7px;
+            text-transform: capitalize;
+            text-decoration: none;
+            color: $font-blue-grey;
+
+            &:hover {
+                font-weight: 700;
+                color: $white;
+            }
+        }
+    }
+    // end of .item__links
+}
+// edn of .product__types
+
+.filter_box {
+    margin-bottom: $msize-20px;
+
+    background-color: $white;
+
+    h3 {
+        padding: $msize-21px;
+
+        border-bottom: 1px solid $border-grey;
+
+        font-size: $font-size-11px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: $font-dark-grey;
+    }
+}
+// end of .filter_box
+
+.filter__list {
+    padding: $msize-21px;
+
+    li {
+        margin-right: $msize-6px;
+        margin-bottom: $wsize-10px;
+
+        list-style: none;
+
+        &:nth-child(5n) {
+            margin-right: 0;
+        }            
+    }
+    // end of li
+
+    label {
+        width: $msize-32px;
+        height: $msize-32px;
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+
+        cursor: pointer;
+
+        border-radius: 50%;
+    }
+    // end of label
+
+    input[type="checkbox"] {
+        display: none;
+
+        &:checked + label {
+            border: 1px solid $bg-dark-grey;
+
+            transform: scale(1.15);
+        }
+    }
+    // end of input[type="checkbox"] 
+}
+// end of .filter__list
+
+.product__sizes {
+
+    .filter__list {
+        label {
+            background-color: #eee;
+
+            font-size: $font-size-11px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: $font-dark-grey;
+        }
+
+        input[type="checkbox"]:checked + label {
+            background-color: $bg-dark-blue-grey;
+            border: none;
+
+            color: $white;
+
+            transform: none;
+        }
+    }
+    // end of .filter__list
+}
+// end of .product__sizes
+
+.product__prices {    
+
+    .price_slider {
+        padding: $msize-21px;
+        
+        .ui-widget-content {
+            background-color: #eee;
+            border: none;
+        }
+
+        .ui-slider-horizontal {
+            height: 2px;
+        }
+
+        .ui-slider-range {
+            background-color: $bg-dark-blue-grey;
+            border: none;
+        }
+
+        .ui-slider-handle {
+            width: $msize-16px;
+            height: $msize-16px;
+            top: -$msize-8px;
+
+            background-color: $white;
+
+            border-radius: 50%;
+            border: 2px solid $bg-dark-blue-grey;
+        }
+
+        #slider {
+            margin-bottom: $msize-11px;
+        }
+
+        .selected_prices {
+            
+            input {
+                width: 30%;
+                border: none;
+
+                font-family: 'PT Serif', Georgia, 'Times New Roman', Times, serif;
+                font-size: $font-size-13px;
+                font-weight: 400;
+                color: #878787;
+
+                text-align: center;
+
+                &:focus {
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
+        // end of .selected_prices
+    }
+    // end of .price_slider
+}
+// end of .product__prices
