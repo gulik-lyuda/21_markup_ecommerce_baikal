@@ -116,51 +116,62 @@ body {
       margin-right: 1.33vw;
       fill: #8ad592; }
 
-.menu {
+.menu,
+.footer_menu {
   width: 100%;
   height: 4.17vw;
   background-color: #fff; }
-  .menu .container {
+  .menu .container,
+  .footer_menu .container {
     height: inherit; }
-    .menu .container ul {
-      height: inherit; }
-      .menu .container ul li {
-        height: inherit;
-        list-style: none; }
-      .menu .container ul a {
-        height: inherit;
-        padding: 0 1.5vw;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-flow: row nowrap;
-                flex-flow: row nowrap;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        font-size: 1.08vmax;
-        font-weight: 700;
-        letter-spacing: 0.06em;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: #3c3d41; }
-        .menu .container ul a:hover {
-          background-color: #3c3d41;
-          color: #fff; }
-    .menu .container .search_btn {
+    .menu .container .search_btn,
+    .footer_menu .container .search_btn {
       position: absolute;
       right: 0;
       margin-top: 2px;
       cursor: pointer; }
-      .menu .container .search_btn svg {
+      .menu .container .search_btn svg,
+      .footer_menu .container .search_btn svg {
         width: 1.5vw;
         height: 1.5vw;
         fill: #3c3d41; }
+  .menu ul,
+  .footer_menu ul {
+    height: inherit; }
+    .menu ul li,
+    .footer_menu ul li {
+      height: inherit;
+      list-style: none; }
+    .menu ul a,
+    .footer_menu ul a {
+      height: inherit;
+      padding: 0 1.5vw;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      font-size: 1.08vmax;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #3c3d41; }
+
+.menu a:hover {
+  background-color: #3c3d41;
+  color: #fff; }
+
+.footer_menu a:hover {
+  text-decoration: underline; }
 
 .banner {
   width: 100%;
@@ -279,6 +290,9 @@ body {
             align-items: center;
     cursor: pointer;
     border-radius: 50%; }
+    .filter__list label:hover {
+      -webkit-transform: scale(1.15);
+              transform: scale(1.15); }
   .filter__list input[type="checkbox"] {
     display: none; }
     .filter__list input[type="checkbox"]:checked + label {
@@ -410,3 +424,60 @@ body {
   #load_more_btn:hover {
     -webkit-transform: scale(0.98);
             transform: scale(0.98); }
+
+footer {
+  width: 100%;
+  padding: 5vw;
+  background-color: #fff; }
+  footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  footer .footer_menu {
+    margin-bottom: 3.33vw; }
+  footer .newsletters {
+    margin-bottom: 2.92vw; }
+    footer .newsletters h3 {
+      margin-right: 2.08vmax;
+      font-size: 1.08vmax;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #3c3d41; }
+    footer .newsletters input {
+      width: 18.82vw;
+      height: 2.67vmax;
+      padding: 1.08vw;
+      background-color: #eaeaea;
+      background-image: url("../images/icons/mail.png");
+      background-repeat: no-repeat;
+      background-position: 95% 50%;
+      border: none;
+      font-size: 1vmax;
+      font-weight: 400;
+      color: #666; }
+      footer .newsletters input:focus {
+        border: none;
+        outline: none; }
+  footer .socials li {
+    margin-right: 3.33vw;
+    list-style: none; }
+    footer .socials li:last-child {
+      margin-right: 0; }
+    footer .socials li a {
+      text-decoration: none; }
+  footer .socials svg {
+    fill: #838d8f; }
+    footer .socials svg:hover {
+      -webkit-transform: scale(1.5);
+              transform: scale(1.5); }
+  footer .socials .facebook {
+    width: 0.67vw;
+    height: 1.33vw; }
+  footer .socials .twitter {
+    width: 1.58vw;
+    height: 1.08vw; }
+  footer .socials .instagram {
+    width: 1.25vw;
+    height: 1.25vw; }

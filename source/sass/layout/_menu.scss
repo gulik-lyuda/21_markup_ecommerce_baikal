@@ -1,47 +1,11 @@
-.menu {
+.menu,
+.footer_menu {
     width: 100%;
     height: $wsize-50px;
     background-color: $white;
 
     .container {
         height: inherit;
-
-        ul {
-            height: inherit;
-
-            li {
-                height: inherit;
-
-                list-style: none;
-            }
-
-            a {
-                height: inherit;
-                padding: 0 $wsize-18px;
-
-                display: flex;
-                flex-flow: row nowrap;
-                align-items: center;
-                justify-content: center;
-
-                font-size: $font-size-13px;
-                font-weight: 700;
-                letter-spacing: 0.06em;
-
-                text-decoration: none;
-                text-transform: uppercase;
-                color: $font-dark-grey;
-
-                &:hover {
-                    background-color: $font-dark-grey;
-
-                    color: $white;
-                }
-                // end of a:hover
-            }
-            // end of a
-        }
-        // end of ul
 
         .search_btn {
             position: absolute;
@@ -60,5 +24,57 @@
         // end of .search_btn
     }
     // end of .container
+
+    ul {
+        height: inherit;
+
+        li {
+            height: inherit;
+
+            list-style: none;
+        }
+
+        a {
+            height: inherit;
+            padding: 0 $wsize-18px;
+
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+
+            font-size: $font-size-13px;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $font-dark-grey;
+
+            &:hover {
+                
+            }
+            // end of a:hover
+        }
+        // end of a
+    }
+    // end of ul
+}
+// end of .menu & .footer_menu
+
+.menu {
+    a:hover {
+        background-color: $font-dark-grey;
+
+        color: $white;
+    }
 }
 // end of .menu
+
+.footer_menu {
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+// end of .footer_menu

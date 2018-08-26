@@ -135,6 +135,10 @@
         cursor: pointer;
 
         border-radius: 50%;
+
+        &:hover {
+            transform: scale(1.15);
+        }
     }
     // end of label
 

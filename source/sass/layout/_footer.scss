@@ -1,0 +1,91 @@
+footer {
+    width: 100%;
+    padding: $wsize-60px;
+
+    background-color: $white;
+
+    .container {
+        flex-direction: column;
+    }
+
+    .footer_menu {
+        margin-bottom: $wsize-40px;
+    }
+    // end of .footer_menu
+
+    .newsletters {
+        margin-bottom: $wsize-35px;
+
+        h3 {
+            margin-right: $msize-25px;
+
+            font-size: $font-size-13px;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: $font-dark-grey;
+        }
+
+        input {
+            width: $wsize-226px;
+            height: $msize-32px;
+            padding: $wsize-13px;
+
+            background-color: $bg-grey;
+            background-image: url('../images/icons/mail.png');
+            background-repeat: no-repeat;
+            background-position: 95% 50%;
+            border: none;
+
+            font-size: $font-size-12px;
+            font-weight: 400;
+            color: $font-grey;
+
+            &:focus {
+                border: none;
+                outline: none;
+            }
+        }
+    }
+    // end of .newsletters
+
+    .socials {
+
+        li {
+            margin-right: $wsize-40px;
+            list-style: none;
+            
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+        svg {
+            fill: $bg-dark-blue-grey;
+
+            &:hover {
+                transform: scale(1.5);
+            }
+        }
+
+        .facebook {
+            width: $wsize-8px;
+            height: $wsize-16px;
+        }
+
+        .twitter {
+            width: $wsize-19px;
+            height: $wsize-13px;
+        }
+
+        .instagram {
+            width: $wsize-15px;
+            height: $wsize-15px;
+        }
+    }
+    // end of .socials
+}
