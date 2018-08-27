@@ -17,6 +17,11 @@ $(function(){
         $('#cart').toggleClass('open');
     });
 
+// Work with Search button
+    $('#search_btn').click(function() {
+        $('#search_panel').toggleClass('open');
+    });
+
 // Open the submenu by clicking on the left panel menu item
     $('.item__title').click(function() {
 
@@ -49,5 +54,15 @@ $(function(){
     $('input[name="maxPrice"]').on("change paste keyup", function() {
         $('#slider').slider('values', 1, $(this).val().replace('$', '')); 
     });
+
+// Work with Load More button under the Products list
+    $('#load_more_btn').click(function(event) {
+        event.preventDefault();
+
+        // in real life we'll get them from a server :-)
+        $('.products__list').append('<!-- Product 1 --><a class="products__item rounded_box main_flex__nowrap flex__jcontent_centerflex__align-items_center"><div class="products__item_sticker rounded_box main_flex__nowrap flex__jcontent_center flex__align-items_center">new</div><div class="products__item_image"><img src="images/content/product_001.png" alt="Product Image"></div><h2>Our Legacy Splash<br>Jacquard Knit</h2><p class="products__item_tags">Faded Olive Twill</p><!-- end of .products__item_tags --><p class="products__item_price">$570</p><!-- end of .products__item_price --></a><!-- end of .products__item --><!-- Product 2 --><a class="products__item rounded_box main_flex__nowrap flex__jcontent_center flex__align-items_center"><div class="products__item_image"><img src="images/content/product_002.png" alt="Product Image"></div><h2>Our Legacy Splash<br>50s Sweater</h2><p class="products__item_tags">Grey Melange</p><!-- end of .products__item_tags --><p class="products__item_price">$160</p><!-- end of .products__item_price --></a><!-- end of .products__item -->');
+    });
+
+    
 
 });

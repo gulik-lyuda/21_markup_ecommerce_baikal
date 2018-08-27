@@ -134,14 +134,41 @@ body {
   .menu .container,
   .footer_menu .container {
     height: inherit; }
-    .menu .container .search_btn,
-    .footer_menu .container .search_btn {
+    .menu .container #search_panel,
+    .footer_menu .container #search_panel {
+      width: 96%;
+      height: inherit;
+      padding: 0.83vmax;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 5;
+      display: none;
+      background-color: #fff; }
+      .menu .container #search_panel.open,
+      .footer_menu .container #search_panel.open {
+        display: block; }
+      .menu .container #search_panel input,
+      .footer_menu .container #search_panel input {
+        width: 100%;
+        height: 2.5vmax;
+        padding-left: 1.65vmax;
+        border: 1px solid #ededed;
+        font-size: 0.92vmax;
+        font-weight: 400;
+        text-transform: capitalize;
+        color: #aaa; }
+        .menu .container #search_panel input:focus,
+        .footer_menu .container #search_panel input:focus {
+          outline: none; }
+    .menu .container #search_btn,
+    .footer_menu .container #search_btn {
       position: absolute;
       right: 0;
       margin-top: 2px;
       cursor: pointer; }
-      .menu .container .search_btn svg,
-      .footer_menu .container .search_btn svg {
+      .menu .container #search_btn svg,
+      .footer_menu .container #search_btn svg {
         width: 1.5vw;
         height: 1.5vw;
         fill: #3c3d41; }
