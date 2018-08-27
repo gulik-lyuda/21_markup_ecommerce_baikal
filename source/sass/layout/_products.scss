@@ -5,8 +5,7 @@
 // end of .products__gallery
 
 .products__list {
-    margin-bottom: $msize-20px;
-
+    margin-bottom: $msize-18px;
 }
 // end of .products__list
 
@@ -37,6 +36,7 @@
     &_image {
         width: $wsize-160px;
         height: $wsize-160px;
+        margin-top: -$msize-5px;
         margin-bottom: $msize-22px;
 
         overflow: hidden;

@@ -5,6 +5,7 @@
 
 .product__types {
     margin-bottom: $msize-20px;
+    
     background-color: $white;
 
     &_item {
@@ -15,13 +16,14 @@
     // end of .product__types_item
 
     .item__title {
-        padding: $msize-21px;
+        padding: $msize-20px $msize-20px $msize-18px;
 
         border-bottom: 1px solid $border-grey;
 
         font-size: $font-size-11px;
+        line-height: 1;
         font-weight: 700;
-        letter-spacing: 0.06em;
+        letter-spacing: 0.16em;
         text-transform: uppercase;
         color: $font-dark-grey;
 
@@ -58,11 +60,11 @@
         }
 
         ul {
-            padding: $msize-21px;
+            padding: $msize-20px;
         }
 
         li {
-            margin-bottom: $msize-5px;
+            margin-bottom: $msize-10px;
 
             list-style: none;
 
@@ -74,7 +76,7 @@
         a {          
             font-size: $font-size-13px;
             font-weight: 400;
-            line-height: $line-height-25_7px;
+            line-height: 1.2;
             text-transform: capitalize;
             text-decoration: none;
             color: $font-blue-grey;
@@ -89,19 +91,35 @@
 }
 // edn of .product__types
 
+.product__types_item {
+
+    &:first-of-type {
+        .item__title {
+            padding: $msize-21px $msize-20px $msize-20px;
+        }
+    }
+
+    &:last-of-type {
+        .item__title {
+            padding: $msize-20px $msize-20px $msize-18px;
+        }
+    }
+}
+// end of .product__types_item
+
 .filter_box {
-    margin-bottom: $msize-20px;
+    margin-bottom: $msize-21px;
 
     background-color: $white;
 
     h3 {
-        padding: $msize-21px;
+        padding: $msize-19px;
 
         border-bottom: 1px solid $border-grey;
 
         font-size: $font-size-11px;
         font-weight: 700;
-        letter-spacing: 0.06em;
+        letter-spacing: 0.19em;
         text-transform: uppercase;
         color: $font-dark-grey;
     }
@@ -109,10 +127,10 @@
 // end of .filter_box
 
 .filter__list {
-    padding: $msize-21px;
+    padding: $msize-21px $msize-19px $msize-10px;
 
     li {
-        margin-right: $msize-6px;
+        margin-right: $msize-8px;
         margin-bottom: $wsize-10px;
 
         list-style: none;
@@ -159,6 +177,11 @@
 
     .filter__list {
         label {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+
             background-color: #eee;
 
             font-size: $font-size-11px;
@@ -183,7 +206,7 @@
 .product__prices {    
 
     .price_slider {
-        padding: $msize-21px;
+        padding: $msize-28px $msize-21px $msize-21px;
         
         .ui-widget-content {
             background-color: #eee;
@@ -211,7 +234,7 @@
         }
 
         #slider {
-            margin-bottom: $msize-11px;
+            margin-bottom: $wsize-15px;
         }
 
         .selected_prices {

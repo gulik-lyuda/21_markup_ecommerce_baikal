@@ -1,6 +1,6 @@
 footer {
     width: 100%;
-    padding: $wsize-60px;
+    padding: $wsize-40px;
 
     background-color: $white;
 
@@ -9,7 +9,13 @@ footer {
     }
 
     .footer_menu {
-        margin-bottom: $wsize-40px;
+        margin-bottom: $wsize-20px;
+
+        a {
+            padding: 0 $wsize-12px;
+
+            letter-spacing: 0.021em;
+        }
     }
     // end of .footer_menu
 
@@ -17,11 +23,11 @@ footer {
         margin-bottom: $wsize-35px;
 
         h3 {
-            margin-right: $msize-25px;
+            margin-right: $msize-20px;
 
-            font-size: $font-size-13px;
+            font-size: $font-size-11px;
             font-weight: 700;
-            letter-spacing: 0.06em;
+            letter-spacing: 0.17em;
             text-transform: uppercase;
             color: $font-dark-grey;
         }
@@ -29,7 +35,7 @@ footer {
         input {
             width: $wsize-226px;
             height: $msize-32px;
-            padding: $wsize-13px;
+            padding: $wsize-12px;
 
             background-color: $bg-grey;
             background-image: url('../images/icons/mail.png');
@@ -52,7 +58,7 @@ footer {
     .socials {
 
         li {
-            margin-right: $wsize-40px;
+            margin-right: $wsize-35px;
             list-style: none;
             
             &:last-child {
