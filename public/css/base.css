@@ -50,6 +50,16 @@ body {
   .green-btn svg {
     fill: #8ad592; }
 
+.disable_page {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  display: none;
+  background-color: rgba(46, 46, 48, 0.5); }
+
 .header__top {
   width: 100%;
   height: 9.25vw;
@@ -58,14 +68,14 @@ body {
   .header__top .container {
     height: inherit;
     margin-top: -2px; }
-  .header__top .sign_in {
+  .header__top #sign_in_btn {
     border: 1px solid #ededed;
     margin-right: 5.17vw;
     color: #fff; }
-    .header__top .sign_in:hover {
+    .header__top #sign_in_btn:hover {
       background-color: #fff;
       color: #3c3d41; }
-    .header__top .sign_in svg {
+    .header__top #sign_in_btn svg {
       width: 1.33vw;
       height: 1.33vw;
       margin-right: 1.83vw;
@@ -102,15 +112,15 @@ body {
       text-decoration: none; }
     .header__top .logo svg {
       fill: #fff; }
-  .header__top .cart {
+  .header__top #cart_btn {
     margin-top: 3px;
     padding: 0.75vw 1.83vw 0.75vw 1.58vw; }
-    .header__top .cart:hover {
+    .header__top #cart_btn:hover {
       background-color: #8ad592;
       color: #fff; }
-      .header__top .cart:hover svg {
+      .header__top #cart_btn:hover svg {
         fill: #fff; }
-    .header__top .cart svg {
+    .header__top #cart_btn svg {
       width: 1.25vw;
       height: 1.17vw;
       margin-right: 1.33vw;
@@ -505,3 +515,104 @@ footer {
   footer .socials .instagram {
     width: 1.25vw;
     height: 1.25vw; }
+
+#cart {
+  width: 35vw;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  background-color: #fff;
+  -webkit-box-shadow: -3px 2px 9px rgba(184, 198, 199, 0.5);
+          box-shadow: -3px 2px 9px rgba(184, 198, 199, 0.5);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%); }
+  #cart.open {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+
+.cart__title {
+  width: 100%;
+  height: 4.17vw;
+  padding: 1vw 2.08vmax;
+  background-color: #84ce8b;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer; }
+  .cart__title svg {
+    width: 2.67vmax;
+    height: 2.67vmax;
+    fill: #fff; }
+
+#order_btn {
+  width: 100%;
+  height: 4.17vw;
+  background-color: #838d8f;
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff; }
+  #order_btn:focus {
+    border: none;
+    outline: none; }
+  #order_btn:hover {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98); }
+
+#sign_in {
+  width: 30vw;
+  padding: 4.25vmax 2.08vmax 2.08vmax;
+  position: fixed;
+  top: 25vh;
+  left: calc( 50% - 15vw);
+  z-index: 102;
+  display: none;
+  background-color: #fff;
+  border-radius: 4px; }
+
+.disable_page.open,
+#sign_in.open {
+  display: block; }
+
+.sign_in__form {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .sign_in__form input,
+  .sign_in__form button {
+    width: 100%;
+    height: 3.33vw;
+    padding: 1.25vw 1.67vw;
+    font-size: 0.92vmax; }
+    .sign_in__form input:focus,
+    .sign_in__form button:focus {
+      outline: none; }
+  .sign_in__form input {
+    margin-bottom: 1.67vw;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #aaa; }
+  .sign_in__form button {
+    background-color: #838d8f;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff; }
+    .sign_in__form button:hover {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98); }
+
+#close_btn {
+  width: 2vmax;
+  height: 2vmax;
+  position: absolute;
+  top: 0.83vmax;
+  right: 1.65vmax;
+  fill: #838d8f;
+  cursor: pointer; }

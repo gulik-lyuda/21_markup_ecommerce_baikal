@@ -11,7 +11,7 @@
         margin-top: -2px;
     }
 
-    .sign_in {
+    #sign_in_btn {
         border: 1px solid $border-grey; 
         margin-right: $wsize-62px;
 
@@ -86,7 +86,7 @@
     }
     // end of .logo
 
-    .cart {
+    #cart_btn {
         margin-top: 3px;
         padding: $wsize-9px $wsize-22px $wsize-9px $wsize-19px;
 
@@ -109,6 +109,6 @@
             fill: $font-green;
         }  
     }
-    // end of .cart
+    // end of #cart_btn
 }
 // end of .header__top

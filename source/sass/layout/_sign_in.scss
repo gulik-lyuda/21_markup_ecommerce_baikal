@@ -1,0 +1,73 @@
+#sign_in {
+    width: 30vw;
+    padding: $msize-51px $msize-25px $msize-25px;
+
+    position: fixed;
+    top: 25vh;
+    left: calc( 50% - 15vw);
+    z-index: 102;
+
+    display: none;
+
+    background-color: $white;
+    border-radius: 4px;
+}
+// end of #sign_in
+
+.disable_page.open,
+#sign_in.open {
+    display: block;
+}
+
+.sign_in__form {
+    flex-direction: column;
+
+    input,
+    button {
+        width: 100%;
+        height: $wsize-40px;
+        padding: $wsize-15px $wsize-20px;
+
+        font-size: $font-size-11px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    input {
+        margin-bottom: $wsize-20px;
+
+        font-weight: 400;
+        text-transform: capitalize;
+        color: $font-light-grey;
+    }
+
+    button {
+        background-color: $bg-dark-blue-grey;
+        border: none;
+
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $white;
+   
+        &:hover {
+            transform: scale(0.98);
+        }
+    }
+}
+// end of .sign_in__form
+
+#close_btn {
+    width: $msize-24px;
+    height: $msize-24px; 
+
+    position: absolute;
+    top: $msize-10px;
+    right: $msize-20px;
+
+    fill: $bg-dark-blue-grey;
+
+    cursor: pointer;
+}
+// end of #close_btn

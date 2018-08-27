@@ -1,6 +1,22 @@
 $(function(){
     "use strict";
 
+// Work with Sign In button
+    $('#sign_in_btn').click(function() {
+        $('#sign_in').toggleClass('open');
+        $('.disable_page').toggleClass('open');
+    });
+
+    $('#close_btn, .disable_page').click(function() {
+        $('#sign_in').toggleClass('open');
+        $('.disable_page').toggleClass('open');
+    });
+
+// Work with the Cart button
+    $('#cart_btn, .cart__title').click(function() {
+        $('#cart').toggleClass('open');
+    });
+
 // Open the submenu by clicking on the left panel menu item
     $('.item__title').click(function() {
 
